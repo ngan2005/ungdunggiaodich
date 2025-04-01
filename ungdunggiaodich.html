@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng giao dịch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <h1>Ứng dụng giao dịch</h1>
+    <ul>
+        <li><a href="#dang-ky">Đăng ký</a></li>
+        <li><a href="#dang-nhap">Đăng nhập</a></li>
+        <li><a href="#thong-tin">Thông tin</a></li>
+        <li><a href="#nap-tien">Nạp tiền</a></li>
+        <li><a href="#rut-tien">Rút tiền</a></li>
+        <li><a href="#chuyen-tien">Chuyển tiền</a></li>
+        <li><a href="#lich-su">Lịch sử giao dịch</a></li>
+        <li><a href="#cap-nhat">Cập nhật thông tin</a></li>
+        <li><a href="#doi-mat-khau">Đổi mật khẩu</a></li>
+        <li><a href="#nap-data">Nạp data điện thoại</a></li>
+        <li><a href="#mua-ve-xe">Mua vé xe</a></li>
+        <li><a href="#mua-ve-tau">Mua vé tàu</a></li>
+        <li><a href="#mua-ve-may-bay">Mua vé máy bay</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="dang-ky">
+        <h2>Đăng ký tài khoản</h2>
+        <form id="dang-ky-form">
+            <label for="ho-ten">Họ tên:</label>
+            <input type="text" id="ho-ten" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="mat-khau">Mật khẩu:</label>
+            <input type="password" id="mat-khau" required>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </section>
+
+    <section id="dang-nhap">
+        <h2>Đăng nhập</h2>
+        <form id="dang-nhap-form">
+            <label for="email-dang-nhap">Email:</label>
+            <input type="email" id="email-dang-nhap" required>
+            <label for="mat-khau-dang-nhap">Mật khẩu:</label>
+            <input type="password" id="mat-khau-dang-nhap" required>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </section>
+
+    <section id="thong-tin">
+        <h2>Thông tin người dùng</h2>
+        <div id="thong-tin-nguoi-dung">
+            <!-- Hiển thị thông tin người dùng -->
+        </div>
+    </section>
+
+    <section id="nap-tien">
+        <h2>Nạp tiền</h2>
+        <form id="nap-tien-form">
+            <label for="so-tien-nap">Số tiền muốn nạp:</label>
+            <input type="number" id="so-tien-nap" required>
+            <label for="ngay-nap">Ngày giao dịch (dd/mm/yyyy):</label>
+            <input type="text" id="ngay-nap" required>
+            <button type="submit">Nạp tiền</button>
+        </form>
+    </section>
+
+    <section id="rut-tien">
+        <h2>Rút tiền</h2>
+        <form id="rut-tien-form">
+            <label for="so-tien-rut">Số tiền muốn rút:</label>
+            <input type="number" id="so-tien-rut" required>
+            <label for="ngay-rut">Ngày rút tiền:</label>
+            <input type="text" id="ngay-rut" required>
+            <button type="submit">Rút tiền</button>
+        </form>
+    </section>
+
+    <section id="chuyen-tien">
+        <h2>Chuyển tiền</h2>
+        <form id="chuyen-tien-form">
+            <label for="nguoi-nhan">Tên người nhận:</label>
+            <input type="text" id="nguoi-nhan" required>
+            <label for="so-tien-chuyen">Số tiền muốn chuyển:</label>
+            <input type="number" id="so-tien-chuyen" required>
+            <label for="ngay-chuyen">Ngày chuyển tiền:</label>
+            <input type="text" id="ngay-chuyen" required>
+            <button type="submit">Chuyển tiền</button>
+        </form>
+    </section>
+
+    <section id="lich-su">
+        <h2>Lịch sử giao dịch</h2>
+        <div id="lich-su-giao-dich">
+            <!-- Hiển thị lịch sử giao dịch -->
+        </div>
+    </section>
+
+    <section id="cap-nhat">
+        <h2>Cập nhật thông tin</h2>
+        <form id="cap-nhat-form">
+            <label for="ho-ten-moi">Tên mới:</label>
+            <input type="text" id="ho-ten-moi" required>
+            <label for="so-dien-thoai-moi">Số điện thoại mới:</label>
+            <input type="text" id="so-dien-thoai-moi" required>
+            <button type="submit">Cập nhật thông tin</button>
+        </form>
+    </section>
+
+    <section id="doi-mat-khau">
+        <h2>Đổi mật khẩu</h2>
+        <form id="doi-mat-khau-form">
+            <label for="mat-khau-moi">Mật khẩu mới:</label>
+            <input type="password" id="mat-khau-moi" required>
+            <button type="submit">Đổi mật khẩu</button>
+        </form>
+    </section>
+
+    <section id="nap-data">
+        <h2>Nạp data điện thoại</h2>
+        <form id="nap-data-form">
+            <label for="so-dien-thoai">Số điện thoại:</label>
+            <input type="text" id="so-dien-thoai" required>
+            <label for="goi-cuoc">Gói cước (1h, 1d, 1w, 1m, 1y):</label>
+            <input type="text" id="goi-cuoc" required>
+            <button type="submit">Nạp data</button>
+        </form>
+    </section>
+
+    <section id="mua-ve-xe">
+        <h2>Mua vé xe</h2>
+        <form id="mua-ve-xe-form">
+            <!-- Các trường thông tin mua vé xe -->
+        </form>
+    </section>
+
+    <section id="mua-ve-tau">
+        <h2>Mua vé tàu</h2>
+        <form id="mua-ve-tau-form">
+            <!-- Các trường thông tin mua vé tàu -->
+        </form>
+    </section>
+
+    <section id="mua-ve-may-bay">
+        <h2>Mua vé máy bay</h2>
+        <form id="mua-ve-may-bay-form">
+            <!-- Các trường thông tin mua vé máy bay -->
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Ứng dụng giao dịch</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
